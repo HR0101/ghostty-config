@@ -60,11 +60,11 @@ keybind = ctrl+j=goto_split:down
 keybind = ctrl+k=goto_split:up
 keybind = ctrl+l=goto_split:right
 
-# どのアプリ操作中でも Option + Space で右からターミナルを出し入れする
+# どのアプリ操作中でも Option + Shift + Space で右からターミナルを出し入れする
 quick-terminal-position = "right"
 quick-terminal-screen = "main"
 quick-terminal-animation-duration = 0.3
-keybind = global:opt+space=toggle_quick_terminal
+keybind = global:opt+shift+space=toggle_quick_terminal
 
 # --- 操作・クリップボード・SSHの設定 ---
 
