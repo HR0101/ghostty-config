@@ -36,10 +36,10 @@ window-padding-balance = true
 window-padding-color = extend
 
 # 背景を少し透明にする（1.0で不透明、0.0で完全透明）
-background-opacity = 0.8
+background-opacity = 0.5
 
 # 背景のすりガラスぼかし具合（trueの代わりに数値20で綺麗にぼかす）
-background-blur = 20
+background-blur = 15
 
 # 終了時のタブや画面分割の状態を次回起動時に自動復元する
 window-save-state = always
