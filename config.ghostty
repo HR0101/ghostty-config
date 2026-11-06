@@ -25,7 +25,7 @@ window-padding-x = 10
 window-padding-y = 10
 
 # 背景を少し透明にする（1.0で不透明、0.0で完全透明）
-background-opacity = 0.95
+background-opacity = 0.8
 
 # 背景をぼかす（macOSのみ）
 background-blur = true

@@ -6,9 +6,9 @@
 # の両方の設定を1つに統合・整理したファイルです。
 
 # --- テーマ・配色 ---
-# ①の設定: TokyoNight / ②の設定(現在上書き適用中): Catppuccin Mocha
-theme = TokyoNight
-# theme = Catppuccin Mocha
+# Catppuccin Mocha（現在適用中） / TokyoNight
+theme = Catppuccin Mocha
+# theme = TokyoNight
 
 # --- フォント設定 ---
 # メインフォント (①) とフォールバックフォント (②)
@@ -23,9 +23,8 @@ maximize = true
 window-padding-x = 10
 window-padding-y = 10
 
-# 背景の透過率（①: 0.8 / ②: 0.95）とブラー（ぼかし）
+# 背景の透過率（1.0で不透明、0.0で完全透明）とブラー（ぼかし）
 background-opacity = 0.8
-# background-opacity = 0.95
 background-blur = true
 
 # タイトルバーとタブの挙動
