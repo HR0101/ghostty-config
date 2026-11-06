@@ -22,7 +22,7 @@ adjust-cell-height = 2
 
 # Dockのアプリアイコンを着せ替え
 # 種類: official, blueprint, chalkboard, glass, holographic, microchip, paper, retro, xray
-macos-icon = glass
+macos-icon = holographic
 
 # --- ウィンドウの設定 ---
 
