@@ -1,0 +1,52 @@
+# ===================================
+# Ghostty 初心者向け設定
+# ===================================
+# 「#」で始まる行はコメント（メモ）です
+# パソコンは読み飛ばすので、自由にメモを書けます
+
+# --- 見た目の設定 ---
+
+# テーマ（配色）を設定
+# 「Catppuccin Mocha」は目に優しいダークテーマです
+theme = Catppuccin Mocha
+
+# フォント（文字の書体）を設定
+# Macに最初から入っている見やすいフォント
+font-family = "Menlo"
+
+# フォントサイズ（文字の大きさ）
+# 数字を大きくすると文字も大きくなります
+font-size = 14
+
+# --- ウィンドウの設定 ---
+
+# ウィンドウの余白（周りの隙間）
+window-padding-x = 10
+window-padding-y = 10
+
+# 背景を少し透明にする（1.0で不透明、0.0で完全透明）
+background-opacity = 0.95
+
+# 背景をぼかす（macOSのみ）
+background-blur = true
+
+# --- 操作の設定 ---
+
+# Optionキーを「Alt」として使う
+# 一部のコマンドで必要になります
+macos-option-as-alt = true
+
+# タイトルバーにタブを表示する
+# ウィンドウ上部がすっきりします
+macos-titlebar-style = tabs
+
+# 閉じるときに確認しない
+# 毎回「本当に閉じますか？」と聞かれなくなります
+confirm-close-surface = false
+
+# 選択したらすぐコピー
+# マウスで文字を選択すると自動でコピーされます
+copy-on-select = true
+
+# タイプ中はマウスカーソルを隠す
+mouse-hide-while-typing = true

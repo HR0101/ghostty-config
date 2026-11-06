@@ -1,0 +1,63 @@
+# ===================================
+# Ghostty 統合設定ファイル (Merged Config)
+# ===================================
+# ~/.config/ghostty/config (①) と
+# ~/Library/Application Support/com.mitchellh.ghostty/config.ghostty (②)
+# の両方の設定を1つに統合・整理したファイルです。
+
+# --- テーマ・配色 ---
+# ①の設定: TokyoNight / ②の設定(現在上書き適用中): Catppuccin Mocha
+theme = TokyoNight
+# theme = Catppuccin Mocha
+
+# --- フォント設定 ---
+# メインフォント (①) とフォールバックフォント (②)
+font-family = PlemolJP35 Console NF
+font-family = "Menlo"
+font-size = 14
+font-thicken = true
+adjust-cell-height = 2
+
+# --- ウィンドウ・背景・余白 ---
+maximize = true
+window-padding-x = 10
+window-padding-y = 10
+
+# 背景の透過率（①: 0.8 / ②: 0.95）とブラー（ぼかし）
+background-opacity = 0.8
+# background-opacity = 0.95
+background-blur = true
+
+# タイトルバーとタブの挙動
+macos-titlebar-style = tabs
+window-new-tab-position = current
+window-inherit-working-directory = true
+
+# --- Quick Terminal (ドロップダウン風ターミナル) ---
+quick-terminal-position = "right"
+quick-terminal-screen = "main"
+quick-terminal-animation-duration = 0.3
+keybind = "cmd+shift+t=toggle_quick_terminal"
+
+# --- キーバインド・操作設定 ---
+# 分割ペイン間の移動
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+l=goto_split:right
+
+# Optionキーを「Alt」として使う
+macos-option-as-alt = true
+
+# シェル統合
+shell-integration = detect
+
+# 閉じるときに確認しない
+confirm-close-surface = false
+
+# タイプ中はマウスカーソルを隠す
+mouse-hide-while-typing = true
+
+# --- クリップボード設定 ---
+# 選択したらすぐコピー
+copy-on-select = true
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
