@@ -1,5 +1,5 @@
 # ===================================
-# Ghostty 初心者向け設定
+# Ghostty 初心者向け設定 + おすすめ全部入り
 # ===================================
 # 「#」で始まる行はコメント（メモ）です
 # パソコンは読み飛ばすので、自由にメモを書けます
@@ -11,42 +11,77 @@
 theme = Catppuccin Mocha
 
 # フォント（文字の書体）を設定
-# Macに最初から入っている見やすいフォント
+# PlemolJP35 をメインにしつつ、予備に Menlo を指定
+font-family = PlemolJP35 Console NF
 font-family = "Menlo"
 
-# フォントサイズ（文字の大きさ）
-# 数字を大きくすると文字も大きくなります
+# フォントサイズ（文字の大きさ）と太さ・行間
 font-size = 14
+font-thicken = true
+adjust-cell-height = 2
+
+# Dockのアプリアイコンを着せ替え
+# 種類: official, blueprint, chalkboard, glass, holographic, microchip, paper, retro, xray
+macos-icon = holographic
 
 # --- ウィンドウの設定 ---
 
-# ウィンドウの余白（周りの隙間）
+# 起動時にウィンドウを最大化する
+maximize = true
+
+# ウィンドウの余白（周りの隙間）と均等配置
 window-padding-x = 10
 window-padding-y = 10
+window-padding-balance = true
+window-padding-color = extend
 
 # 背景を少し透明にする（1.0で不透明、0.0で完全透明）
 background-opacity = 0.8
 
-# 背景をぼかす（macOSのみ）
-background-blur = true
+# 背景のすりガラスぼかし具合（trueの代わりに数値20で綺麗にぼかす）
+background-blur = 20
 
-# --- 操作の設定 ---
+# 終了時のタブや画面分割の状態を次回起動時に自動復元する
+window-save-state = always
+
+# タイトルバーにタブを表示し、新しいタブは現在の位置・同じフォルダで開く
+macos-titlebar-style = tabs
+window-new-tab-position = current
+window-inherit-working-directory = true
+
+# --- 画面分割（Split）と Quick Terminal ---
+
+# 分割したとき、操作していない側の画面を少し暗くして分かりやすくする
+unfocused-split-opacity = 0.75
+
+# 分割した画面の間を Ctrl + H / J / K / L で移動する
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:down
+keybind = ctrl+k=goto_split:up
+keybind = ctrl+l=goto_split:right
+
+# どのアプリ操作中でも Option + Space で右からターミナルを出し入れする
+quick-terminal-position = "right"
+quick-terminal-screen = "main"
+quick-terminal-animation-duration = 0.3
+keybind = global:opt+space=toggle_quick_terminal
+
+# --- 操作・クリップボード・SSHの設定 ---
 
 # Optionキーを「Alt」として使う
-# 一部のコマンドで必要になります
 macos-option-as-alt = true
 
-# タイトルバーにタブを表示する
-# ウィンドウ上部がすっきりします
-macos-titlebar-style = tabs
-
 # 閉じるときに確認しない
-# 毎回「本当に閉じますか？」と聞かれなくなります
 confirm-close-surface = false
 
-# 選択したらすぐコピー
-# マウスで文字を選択すると自動でコピーされます
+# 選択したらすぐコピー＆行末の余分な空白を自動で削る
 copy-on-select = true
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
 
 # タイプ中はマウスカーソルを隠す
 mouse-hide-while-typing = true
+
+# シェル統合とSSH接続先での表示崩れ・エラー自動防止
+shell-integration = detect
+shell-integration-features = cursor,sudo,title,ssh-env,ssh-terminfo,path
